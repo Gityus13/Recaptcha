@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Stan Marsh CAPTCHA</title>
+    <title>CAT CAPTCHA</title>
     <style>
         body {
             font-family: 'Comic Sans MS', cursive, sans-serif;
             text-align: center;
             margin-top: 30px;
-            background-color: #f0f0f0;
+            background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 50%, #80deea 100%);
         }
         #stan {
             width: 200px;
@@ -23,7 +23,7 @@
             font-size: 16px;
             width: 300px;
             border-radius: 20px;
-            border: 3px solid #4b8a08;
+            border: 3px solid #00acc1;
             background-color: #fff;
             font-family: 'Comic Sans MS', cursive;
         }
@@ -31,7 +31,7 @@
             padding: 10px 25px;
             font-size: 16px;
             margin-top: 15px;
-            background-color: #4b8a08;
+            background-color: #00acc1;
             color: white;
             border: none;
             border-radius: 20px;
@@ -40,7 +40,7 @@
             transition: 0.3s;
         }
         button:hover {
-            background-color: #5a9c10;
+            background-color: #00838f;
         }
         .message {
             font-size: 18px;
@@ -48,23 +48,23 @@
             padding: 10px 15px;
             border-radius: 10px;
             max-width: 400px;
-            background-color: #fff;
-            border: 2px solid #ccc;
+            background-color: ;
+            border: 2px solid #80deea;
         }
         .good {
-            color: #4b8a08;
-            border-color: #4b8a08;
+            color: #00838f;
+            border-color: #0c99cc;
         }
         .bad {
             color: #d40000;
             border-color: #d40000;
         }
         h1 {
-            color: #4b8a08;
+            color: #0c99cc;
             text-shadow: 2px 2px 0px rgba(0,0,0,0.1);
         }
         .hint {
-            color: #666;
+            color: #0c99cc;
             font-style: italic;
         }
     </style>
@@ -85,13 +85,13 @@
         const goodWords = [
             "awesome", "cool", "sweet", "rad", "dude", "nice", "great",
             "wow", "epic", "legendary", "wicked", "sick", "gnarly",
-            "love", "peace", "friendship", "happy", "joy"
+            "love", "peace", "friendship", "happy", "joy", "Good", "Why you are cool", "yay", "Beautiful", "Sunlight", "Lucky", "Cheerful", "good", "glad", "yay", "joy", "smile", "hooray", "bright", "cheer", "woohoo", "kind", "happy", "bravo", "peace", "love", "celebrate", "shine", "glow", "awesome", "sweet", "fun", "fantastic", "hope", "dream", "magic", "trust", "warm", "excited", "best", "bliss", "triumph", "light", "spark", "jolly", "bold", "free", "delight", "grin", "victory", "calm", "fresh", "jubilant", "cool", "radiant", "brave", "lively", "cheers", "sunny", "zest", "true", "pure", "jubilate", "lovely", "great", "hurray", "peaceful", "strong", "wow", "lucky", "laugh", "gleam", "vibe", "rise", "dance", "sing", "play", "free", "glow", "light", "hope", "celebrate", "laugh", "brave", "strong", "magic", "dream", "warm", "sweet", "true", "kind", "victory", "happy", "radiant", "sunlight", "beautiful", "friendship", "cheerful", "epic", "legendary", "wicked", "sick", "gnarly", "dude", "nice", "great"
         ];
         
         // Bad words/phrases
         const badWords = [
             "sucks", "lame", "stupid", "hate", "boring", "dumb",
-            "terrible", "awful", "worst", "gross", "disgusting", "kill"
+            "terrible", "awful", "worst", "gross", "disgusting", "kill", "sad", "angry", "upset", "mad", "bad", "hate", "hurt", "lonely", "gloom", "bored", "tired", "sick", "worried", "scared", "nervous", "frustrated", "annoyed", "disgusted", "jealous", "broken", "miserable", "depressed", "stressed", "guilty", "regret", "failure", "problem", "trouble", "mess", "cry", "pain", "fear", "hate", "shame", "rage", "frown", "grief", "dark", "lost", "angst", "bad", "hurt", "down", "weak", "silent", "worst", "cold", "hate", "hurt", "lonely", "fail", "sadness", "panic", "hate", "sad", "angry", "bitter", "stress", "fear", "hate", "crying", "hate", "broken", "mad", "annoyed", "tired", "numb", "painful", "hate", "worried", "sad", "gloomy", "hate", "upset", "weak", "hurt", "lost", "bad", "lonely", "regret", "frustrated", "worried", "hate", "hate", "sad", "disappointed", "upset", "mad", "angry", "hate"
         ];
 
         function checkWords() {
@@ -113,7 +113,7 @@
                 message.innerText = "Dude, that's totally awesome!";
                 message.className += " good";
             } else if (isBad) {
-                stan.style.backgroundImage = "https://cdn-icons-png.flaticon.com/512/2172/2172065.png')";
+                stan.style.backgroundImage = "url('https://cdn-icons-png.flaticon.com/512/2172/2172065.png')";
                 message.innerText = "Dude, that's not cool at all...";
                 message.className += " bad";
             } else {
