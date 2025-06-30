@@ -72,8 +72,8 @@
 </head>
 <body>
     
-    <h1>Cat Word Check</h1>
-    <p class="hint">Type something - Cat will judge if it's cool or not</p>
+    <h1>CatCaptcha</h1>
+    <p class="hint">Type something - To get CatCaptcha Verified</p>
     
     <div id="stan" style="background-image: url('https://cdn-icons-png.flaticon.com/512/16064/16064276.png')"></div>
     
@@ -93,7 +93,7 @@
         // Bad words/phrases
         const badWords = [
             "sucks", "lame", "stupid", "hate", "boring", "dumb",
-            "terrible", "awful", "worst", "gross", "disgusting", "kill", "sad", "angry", "upset", "mad", "bad", "hate", "hurt", "lonely", "gloom", "bored", "tired", "sick", "worried", "scared", "nervous", "frustrated", "annoyed", "disgusted", "jealous", "broken", "miserable", "depressed", "stressed", "guilty", "regret", "failure", "problem", "trouble", "mess", "cry", "pain", "fear", "hate", "shame", "rage", "frown", "grief", "dark", "lost", "angst", "bad", "hurt", "down", "weak", "silent", "worst", "cold", "hate", "hurt", "lonely", "fail", "sadness", "panic", "hate", "sad", "angry", "bitter", "stress", "fear", "hate", "crying", "hate", "broken", "mad", "annoyed", "tired", "numb", "painful", "hate", "worried", "sad", "gloomy", "hate", "upset", "weak", "hurt", "lost", "bad", "lonely", "regret", "frustrated", "worried", "hate", "hate", "sad", "disappointed", "upset", "mad", "angry", "hate"
+            "terrible", "awful", "worst", "gross", "disgusting", "kill", "sad", "angry", "upset", "mad", "bad", "hate", "hurt", "lonely", "gloom", "bored", "tired", "sick", "worried", "scared", "nervous", "frustrated", "annoyed", "disgusted", "jealous", "broken", "miserable", "depressed", "stressed", "guilty", "regret", "failure", "problem", "trouble", "mess", "cry", "pain", "fear", "hate", "shame", "rage", "frown", "grief", "dark", "lost", "angst", "bad", "hurt", "down", "weak", "silent", "worst", "cold", "hate", "hurt", "lonely", "fail", "sadness", "panic", "hate", "sad", "angry", "bitter", "stress", "fear", "hate", "crying", "hate", "broken", "mad", "annoyed", "tired", "numb", "painful", "hate", "worried", "sad", "gloomy", "hate", "upset", "weak", "hurt", "lost", "bad", "lonely", "regret", "frustrated", "worried", "hate", "hate", "sad", "disappointed", "upset", "mad", "angry", "hate", "horrible"
         ];
 
         function checkWords() {
@@ -112,15 +112,15 @@
             
             if (isGood) {
                 stan.style.backgroundImage = "url('https://cdn-icons-png.flaticon.com/512/2171/2171970.png')";
-                message.innerText = "Dude, that's totally awesome!";
+                message.innerText = "Dude You are aproved ✅";
                 message.className += " good";
             } else if (isBad) {
                 stan.style.backgroundImage = "url('https://cdn-icons-png.flaticon.com/512/2172/2172065.png')";
-                message.innerText = "Dude, that's not cool at all...";
+                message.innerText = "Dude are you robot? 🤖 ❌";
                 message.className += " bad";
             } else {
                 stan.style.backgroundImage = "url('https://cdn-icons-png.flaticon.com/512/16064/16064276.png')";
-                message.innerText = "Whatever, I don't really care...";
+                message.innerText = " Dude whatever, I don't really care... ❌";
             }
         }
     </script>
