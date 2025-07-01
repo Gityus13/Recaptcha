@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CAT CAPTCHA</title>
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/10934/10934938.png" type="image/png">
     <style>
@@ -75,7 +77,7 @@
     <h1>CatCaptcha</h1>
     <p class="hint">Type something - To get CatCaptcha Verified</p>
     
-    <div id="stan" style="background-image: url('https://cdn-icons-png.flaticon.com/512/16064/16064276.png')"></div>
+    <div id="stan" style="background-image: url('https://cdn-icons-png.flaticon.com/512/2172/2172058.png')"></div>
     
     <input type="text" id="text-input" placeholder="Dude, type something...">
     <button onclick="checkWords()">Submit</button>
@@ -111,15 +113,15 @@
             const isBad = badWords.some(word => userInput.includes(word));
             
             if (isGood) {
-                stan.style.backgroundImage = "url('https://cdn-icons-png.flaticon.com/512/2171/2171970.png')";
+                stan.style.backgroundImage = "url('https://cdn-icons-png.flaticon.com/512/2172/2172012.png')";
                 message.innerText = "Dude You are aproved ✅";
                 message.className += " good";
             } else if (isBad) {
-                stan.style.backgroundImage = "url('https://cdn-icons-png.flaticon.com/512/2172/2172065.png')";
+                stan.style.backgroundImage = "url('https://cdn-icons-png.flaticon.com/512/2171/2171950.png')";
                 message.innerText = "Dude are you robot? 🤖 ❌";
                 message.className += " bad";
             } else {
-                stan.style.backgroundImage = "url('https://cdn-icons-png.flaticon.com/512/16064/16064276.png')";
+                stan.style.backgroundImage = "url('https://cdn-icons-png.flaticon.com/512/2171/2171942.png')";
                 message.innerText = " Dude whatever, I don't really care... ❌";
             }
         }
